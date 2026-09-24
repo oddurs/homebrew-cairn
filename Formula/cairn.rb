@@ -3,28 +3,28 @@
 class Cairn < Formula
   desc "Markdown-native roadmap and issue manager that lives in your repository"
   homepage "https://github.com/oddurs/cairn"
-  version "0.2.2"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/oddurs/cairn/releases/download/v#{version}/cairn-#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "e15b89d00f1a4e112680f2ca83f6e74e5410a3d04d5e35d5242a219af1e24f5e"
+      sha256 "86db716e23d9db4ef3d6f2683877e3c436612ce5f3f013116178e28c94c3693d"
     end
     on_intel do
       url "https://github.com/oddurs/cairn/releases/download/v#{version}/cairn-#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "fa2e49d21dc08b07c266f2513dd5e982fa1d7958e896a58ae208fa5657602e54"
+      sha256 "d15cf525ffda912b911f07e8f1ac07ef3ef2049bee368b4f0c102b8b149cda99"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/oddurs/cairn/releases/download/v#{version}/cairn-#{version}-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "f2f89201193c620cb5859d59b26a55ae3056146ce206bdb724bdcf502de35158"
+      sha256 "0acf5fa0e029cb9f9e1d26a7f7d9da7ab16cc6b4cb695c6e2966c466edcaea08"
     end
     on_intel do
       url "https://github.com/oddurs/cairn/releases/download/v#{version}/cairn-#{version}-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "39119a76e84b78a88c3f76f6e46db63ce939e32c5c9e0c8f01da5c69a049434b"
+      sha256 "eb32376192f708fcdcb7e616708c852a5d56df311e71a00d686414d3e9a16c7a"
     end
   end
 
