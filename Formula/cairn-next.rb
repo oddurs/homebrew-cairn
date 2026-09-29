@@ -34,7 +34,9 @@ class CairnNext < Formula
 
   # Not `cairn@1`: Homebrew makes a versioned formula keg-only, and the point
   # of installing this is a `cairn` on PATH, which Harrow runs for every write.
-  conflicts_with "cairn", because: "both install a `cairn` binary"
+  # No `conflicts_with "cairn"` either: it loads that formula too, and under tap
+  # trust, installing this one trusts only this one, so the install is refused.
+  # With both installed, Homebrew leaves the second `cairn` unlinked and says so.
 
   def install
     bin.install "cairn"
